@@ -17,7 +17,7 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Autowired
 	private UserDetailsService userDetailsService;
 	
-//Serve para rodar na Nuvem	
+//Serve for around in sky	
 //	@Override
 //	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
 //		auth.userDetailsService(userDetailsService);
