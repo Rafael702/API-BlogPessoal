@@ -58,14 +58,6 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- Dependência do MySQL -->
-	<!-- <dependency>
-	<groupId>mysql</groupId>
-	<artifactId>mysql-connector-java</artifactId>
-	<scope>runtime</scope>
-	</dependency>-->
-
-	<!-- Dependência PostgreSQL -->
  	<dependency>
 		<groupId>org.postgresql</groupId>
 		<artifactId>postgresql</artifactId>
