@@ -1,2 +1,3 @@
 # API-BlogPessoal
-Durante o bootcamp na Generation foi desenvolvida esta API. 16/06/2021-13/07/2021
+Nesta branch consta as camadas da API| Blog Pessoal.
+Camadas: Model, Controller, Repository e a Security(seguranca e service)
