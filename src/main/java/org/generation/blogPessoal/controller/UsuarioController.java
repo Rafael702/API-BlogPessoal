@@ -32,9 +32,21 @@ public class UsuarioController {
 				.orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).build());
 	}
 	
-	@PostMapping("/cadastrar")
-	public ResponseEntity<Usuario> Post(@RequestBody Usuario usuario){
-		return ResponseEntity.status(HttpStatus.CREATED).body(usuarioService.CadastrarUsuario(usuario));
-	}
+	//Ajuste para o Heroku
+//	@PostMapping("/cadastrar")
+//	public ResponseEntity<Usuario> Post(@RequestBody Usuario usuario){
+//		return ResponseEntity.status(HttpStatus.CREATED).body(usuarioService.CadastrarUsuario(usuario));
+//	}
 	
+	@PostMapping("/cadastrar")
+	public ResponseEntity <Usuario> Post(@RequestBody Usuario usuario) {
+		
+		Usuario usuarioResp = usuarioService.CadastrarUsuario(usuario);
+		try {
+			return ResponseEntity.status(HttpStatus.CREATED).body(usuarioResp);
+		} catch (Exception e) {
+			return ResponseEntity.badRequest().build();
+		}
+	}
+		
 }
