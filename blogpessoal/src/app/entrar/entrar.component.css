@@ -1,0 +1,8 @@
+#img-bg{
+    background-image: url(../../assets/img-bg/code.jfif);
+
+    min-height: 625px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
