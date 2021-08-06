@@ -20,7 +20,7 @@ public class BlogPessoalApplication {
 	}
 	
 	public static void main(String[] args) {
-		SpringApplication.run(org.generation.blogPessoal.BlogPessoalApplication.class, args);
+		SpringApplication.run(BlogPessoalApplication.class, args);
 	}
 
 }
